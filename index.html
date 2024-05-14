@@ -11,7 +11,7 @@
 	<!-- Шапка сайта с логотипом и панелью навигации -->
 	<header>
 		<nav>
-			<a href="index.html" class="logo"><img src="./assets/img/logo.svg"><</a>
+			<a href="index.html" class="logo"><img src="./assets/img/logo.svg"></a>
 			<ul>
 				<li><a href="cakes.html">Готовые торты</a></li>
 				<li><a href="filling.html">Начинка</a></li>
@@ -23,8 +23,8 @@
 	<!-- Секция для рекламного баннера -->
 	<section class="banner">
 		<div class="content">
-			<h1>ДОМАШНЯЯ КОНДИТЕРСКАЯ<</h1>
-			<h2>>СДЕЛАНО С ЛЮБОВЬЮ...</h2>
+			<h1>ДОМАШНЯЯ КОНДИТЕРСКАЯ</h1>
+			<h2>СДЕЛАНО С ЛЮБОВЬЮ...</h2>
 		</div>
 	</section>
 	<!-- Секция Наши преимущества -->
@@ -107,8 +107,8 @@
 			<h4>ИЛИ ОСТАВЬ НАМ СВОЙ НОМЕР И МЫ ПЕРЕЗВОНИМ САМИ</h4>
 			<form action="answer.html">
 				<div class="form__contact"> 
-					<input type="text" minlength="5" placeholder="text" >
-					<input type="tel" minlength="11" name="tel-number" id="tel-number" title=" например 89090983453" placeholder="89090983453">
+					<input type="text" minlength="5" placeholder="Введите имя" >
+					<input type="tel" minlength="11" name="tel-number" id="tel-number" title=" например 89090983453" placeholder="Введите номер телефона"pattern="[0-9]{11}">
 				</div>
 				<div class="form__download">
 					ЕСТЬ ФОРМА ПРИМЕРА?
@@ -129,6 +129,15 @@
 	<section class="map">
 		<div class="content">
 			<h2>МЫ НА КАРТЕ</h2>
+			<iframe
+				src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41600.22919532707!2d17.569618186980133!3d49.33294759224513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713a0ac323a85b5%3A0xc3b26e85b57e46b4!2z0JbQvtC_0YssIDc2OSAwMSBIb2xlxaFvdiwg0KfQtdGF0LjRjw!5e0!3m2!1sru!2sru!4v1715668737683!5m2!1sru!2sru" 
+				width="600" 
+				height="450" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
 			<h2>г.Печора, ул. Первомайская д.25</h2>
 		</div>
 	</section>
@@ -151,10 +160,10 @@
 			<div class="footer_menu">
 				<nav>
 					<ul>
-						<li>Готовые торты</li>
-						<li>Начинка</li>
-						<li>Доставка</li>
-						<li>Контакты</li>
+						<li><a href="cakes.html">Готовые торты</a></li>
+						<li><a href="filling.html">Начинка</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="index.html#feedback">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
