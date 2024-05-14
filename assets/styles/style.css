@@ -38,6 +38,8 @@ section.banner .content {
 /* For index */
 .advantages .content {
 		justify-content: space-between;
+		background: #39312d; 
+		color: #fcfbfa
 	}
 	.advantages .advantages img {
 		margin: 0 auto;
@@ -53,6 +55,9 @@ select .select__cakes .select__cake {
 	display: block;
 	width: 100%;
 	padding: 1rem;
+	background: #39312d;
+	border: 3px solid #39312d;
+	color: #fcfbfa;
 }
 .select .select__cakes .select__cake img {
 	width: 100%;
@@ -92,4 +97,32 @@ select .select__cakes .select__cake {
 }
 .cakes .cake .cake__buy ul { 
 	padding-left: 0;
+}
+*{
+	box-sizing: border-box
+}
+body{
+	color: #1f0f04;
+	background: #fcfbfa;
+}
+section.banner {
+	background: url(../img/banner-bg.jpg) center/cover;
+	color: #fcfbfa;
+}
+section.select{
+	background:  url(../img/select-bg.png);
+}
+section.reviews{
+	background: url(../img/select-bg.png);
+}
+.about{
+	background: url(../img/about-bg.jpg);
+	background-position: center;
+	min-height: 20vw
+}
+section.about .about_wrap{
+	background: rgba(0, 0, 0, 0.5);
+}
+section.about .about_wrap .about_text{
+	color: #fcfbfa;
 }
