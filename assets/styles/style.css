@@ -98,6 +98,24 @@ select .select__cakes .select__cake {
 .cakes .cake .cake__buy ul { 
 	padding-left: 0;
 }
+/* For page fillings */
+header nav ul {
+	font-size: 2rem;
+}
+.filling {
+	font-weight: 700;
+}
+.filling figcaption {
+	align-items: center;
+}
+/* For page cakes */
+.delivery h1 {
+	font-size: 1.5rem;
+}
+.delivery .delivery__price table {
+	font-size: 0.7rem;
+	font-style: italic;
+}
 *{
 	box-sizing: border-box
 }
