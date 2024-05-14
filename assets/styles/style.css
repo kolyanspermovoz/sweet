@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@400;700&display=swap');
 /* Cover for main wrap (all el)*/
 .content{
 	display: flex;
@@ -8,6 +10,7 @@
 	margin: 0 auto;
 	padding: 1em;
 }
+/* General settings */
 header{
 		display: flex;
 		justify-content: space-around;
@@ -35,7 +38,21 @@ section.banner {
 section.banner .content {
 	display: block;
 }
-/* For index */
+section.banner h1,
+section.banner h2 {
+	text-shadow: 0px 6px 6px #000000;
+}
+section.banner h1 {
+	font-size: 1.5rem;
+}
+section.banner h2 {
+	font-size: 1rem;
+	font-style: italic;
+}
+footer {
+	font-size: 1rem;
+}
+/* For page index */
 .advantages .content {
 		justify-content: space-between;
 	}
@@ -48,6 +65,10 @@ section.banner .content {
 	}
 select .select__cakes .select__cake {
 	margin-bottom: 1rem;
+}
+.feedback h3 {
+	margin: 1rem;
+	font-size: 1.5rem;
 }
 .select .select__cakes .select__cake a {
 	display: block;
@@ -75,10 +96,10 @@ select .select__cakes .select__cake {
 }
 /* For pages cakes */
 .cakes .cake {
-		width: 90%;
-		padding: 1rem;
-		margin-bottom: 1rem;
-	}
+	width: 90%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
 .cakes .cake .cake__descript img { 
 	max-width: 90%;
 }
@@ -91,5 +112,29 @@ select .select__cakes .select__cake {
 	padding: 1rem;
 }
 .cakes .cake .cake__buy ul { 
+	list-style-position: inside; /*настраиваем положение маркеров*/
 	padding-left: 0;
+}
+/* For page cakes */
+.cakes .cake .cake__buy ul {
+	list-style-position: inside; /*настраиваем положение маркеров*/
+	padding-left: 0;
+}
+/* For page fillings */
+header nav ul {
+	font-size: 2rem;
+}
+.filling {
+	font-weight: 700;
+}
+.filling figcaption {
+	align-items: center;
+}
+/* For page cakes */
+.delivery h1 {
+	font-size: 1.5rem;
+}
+.delivery .delivery__price table {
+	font-size: 0.7rem;
+	font-style: italic;
 }
