@@ -1,0 +1,95 @@
+/* Cover for main wrap (all el)*/
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+}
+header{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5rem;
+	}
+	header img.Logo {
+		width: 20vw;
+	}
+	header nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		padding left: 1rem;
+	}
+	header .nav ul li {
+		margin-right: 1rem;
+		margin-bottom: 0.5 rem;
+	}
+section.banner {
+	min-height: 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section.banner .content {
+	display: block;
+}
+/* For index */
+.advantages .content {
+		justify-content: space-between;
+	}
+	.advantages .advantages img {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+	.advantages .advantages p {
+		display: none;
+	}
+select .select__cakes .select__cake {
+	margin-bottom: 1rem;
+}
+.select .select__cakes .select__cake a {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+}
+.select .select__cakes .select__cake img {
+	width: 100%;
+}
+.reviews .content .review img {
+		display: none;
+	}
+	.reviews .content .review .review__text {
+		display: flex;
+		align-items: center;
+		margin: 1rem;
+	}
+	.reviews .content .review .review__text blockquote {
+		padding: 0.5rem;
+		margin: 0.5rem;
+	}
+.map iframe {
+	width: 100%;
+	height: 400px;
+}
+/* For pages cakes */
+.cakes .cake {
+		width: 90%;
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
+.cakes .cake .cake__descript img { 
+	max-width: 90%;
+}
+.cakes .cake .cake__buy { 
+	padding: 0.5rem;
+}
+.cakes .cake .cake__buy a {
+	display: inline-block;
+	width: 90%;
+	padding: 1rem;
+}
+.cakes .cake .cake__buy ul { 
+	padding-left: 0;
+}
