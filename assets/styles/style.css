@@ -34,7 +34,7 @@ section.about .about__wrap{
 	background: rgba(0, 0, 0, 0.5);
 }
 section.about .about_wrap .about_text{
-	color: #fcfbfa;
+	font-color: white;
 }
 
 header{
@@ -155,4 +155,31 @@ header nav ul {
 .delivery .delivery__price table {
 	font-size: 0.7rem;
 	font-style: italic;
+}
+section.reviews .content .review .review__text blockquote{
+	border: 1px;
+	border-color: #39312d18;
+	background-image: linear-gradient(135deg, #fcfbfa 50%, #f0f0ef 50%);
+}
+section.feedback{
+	background: url(../img/feedback-bg.jpg);
+	color: white;
+}
+.cake{
+	background-color: #39312d;
+	color: #fcfbfa;
+}
+.fillings .content a{
+	color: #39312d;
+}
+.fillings .filling img{
+	border-radius: 50%;
+}
+.delivery__price tbody{
+	padding: 0.5rem;
+	border-collapse: collapse;
+}
+.delivery__price thead{
+	border-bottom: 3px;
+	border-bottom-color: #39312d;
 }
