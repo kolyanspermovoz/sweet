@@ -8,6 +8,35 @@
 	margin: 0 auto;
 	padding: 1em;
 }
+*{
+	box-sizing: border-box
+}
+body{
+	color: #1f0f04;
+	background: #fcfbfa;
+}
+section.banner {
+	background: url(../img/banner-bg.jpg) center/cover;
+	color: #fcfbfa;
+}
+section.select{
+	background:  url(../img/select-bg.png);
+}
+section.reviews{
+	background: url(../img/select-bg.png);
+}
+.about{
+	background: url(../img/about-bg.jpg);
+	background-position: center;
+	min-height: 20vw
+}
+section.about .about__wrap{
+	background: rgba(0, 0, 0, 0.5);
+}
+section.about .about_wrap .about_text{
+	color: #fcfbfa;
+}
+
 header{
 		display: flex;
 		justify-content: space-around;
@@ -35,7 +64,18 @@ section.banner {
 section.banner .content {
 	display: block;
 }
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+a:hover {
+	text-decoration: underline;
+}
 /* For index */
+.select .select__cakes .select__cake a {
+	cursor: pointer; /* курсор меняется со стандартной стрелки на указатель */
+}
 .advantages .content {
 		justify-content: space-between;
 		background: #39312d; 
@@ -115,57 +155,4 @@ header nav ul {
 .delivery .delivery__price table {
 	font-size: 0.7rem;
 	font-style: italic;
-}
-*{
-	box-sizing: border-box
-}
-body{
-	color: #1f0f04;
-	background: #fcfbfa;
-}
-section.banner {
-	background: url(../img/banner-bg.jpg) center/cover;
-	color: #fcfbfa;
-}
-section.select{
-	background:  url(../img/select-bg.png);
-}
-section.reviews{
-	background: url(../img/select-bg.png);
-}
-.about{
-	background: url(../img/about-bg.jpg);
-	background-position: center;
-	min-height: 20vw
-}
-section.about .about__wrap{
-	background: rgba(0, 0, 0, 0.5);
-	color: #fcfbfa;
-}
-section.reviews .content .review .review__text blockquote{
-	border: 1px;
-	border-color: #39312d18;
-	background-image: linear-gradient(135deg, #fcfbfa 50%, #f0f0ef 50%);
-}
-section.feedback{
-	background: url(../img/feedback-bg.jpg);
-	color: white;
-}
-.cake{
-	background-color: #39312d;
-	color: #fcfbfa;
-}
-.fillings .content a{
-	color: #39312d;
-}
-.fillings .filling img{
-	border-radius: 50%;
-}
-.delivery__price tbody{
-	padding: 0.5rem;
-	border-collapse: collapse;
-}
-.delivery__price thead{
-	border-bottom: 3px;
-	border-bottom-color: #39312d;
 }
