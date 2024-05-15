@@ -1,4 +1,6 @@
 /* Cover for main wrap (all el)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@400;700&display=swap');
 .content{
 	display: flex;
 	align-items: center;
@@ -11,9 +13,21 @@
 *{
 	box-sizing: border-box
 }
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
 body{
 	color: #1f0f04;
 	background: #fcfbfa;
+	font-family: "Roboto", sans-serif;
 }
 section.banner {
 	background: url(../img/banner-bg.jpg) center/cover;
@@ -25,35 +39,55 @@ section.select{
 section.reviews{
 	background: url(../img/select-bg.png);
 }
-.about{
-	background: url(../img/about-bg.jpg);
-	background-position: center;
-	min-height: 20vw
-}
-section.about .about__wrap{
-	background: rgba(0, 0, 0, 0.5);
-}
-section.about .about_wrap .about_text{
-	font-color: white;
-}
 
 header{
+		width: 100%;
+		padding: 0.5rem;
+	}
+	header nav {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 0.5rem;
 	}
-	header img.Logo {
-		width: 20vw;
+	header nav a {
+		color: black;
+	}
+	header nav a.logo img {
+		width: 10vw;
 	}
 	header nav ul{
+		list-style-type: none;
+		place-items: center;
 		display: flex;
-		flex-wrap: wrap;
 		padding left: 1rem;
 	}
-	header .nav ul li {
+	header nav ul li {
 		margin-right: 1rem;
 		margin-bottom: 0.5 rem;
+	}
+footer {
+		background-color: #39312d;
+	}
+	footer .content {
+		width: 100%;
+		color: white;
+	}
+	footer .content .footer_main {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	footer .content .footer_main .footer_social ul {
+		display: flex;
+		list-style-type: none;
+		justify-content: center;
+		align-items: center;
+	}
+	footer .content .footer_main .footer_menu ul {
+		list-style-type: none;
+	}
+	footer .content .footer_main .footer_menu ul a {
+		color: white;
 	}
 section.banner {
 	min-height: 20vw;
@@ -62,15 +96,8 @@ section.banner {
 	justify-content: center;
 }
 section.banner .content {
+	text-align: center;
 	display: block;
-}
-*,
-::after,
-::before {
-	box-sizing: border-box;
-}
-a:hover {
-	text-decoration: underline;
 }
 .fillings .filling img {
 	margin-bottom: 1rem;
@@ -80,13 +107,15 @@ a:hover {
 .fillings .filling img:hover {
 	filter: sepia(0);
 }
+
+
 /* For index */
 .select .select__cakes .select__cake a {
 	cursor: pointer; /* курсор меняется со стандартной стрелки на указатель */
 }
 .advantages .content {
-		justify-content: space-between;
-
+		width: 100%;
+		justify-content: space-around;
 		background: #39312d; 
 		color: #fcfbfa
 	}
@@ -100,9 +129,14 @@ a:hover {
 select .select__cakes .select__cake {
 	margin-bottom: 1rem;
 }
+.select .content h2 {
+	text-align: center;
+	width: 100%;
+}
 .select .select__cakes .select__cake a {
 	display: block;
 	width: 100%;
+	text-align: center;
 	padding: 1rem;
 	background: #39312d;
 	border: 3px solid #39312d;
@@ -111,22 +145,121 @@ select .select__cakes .select__cake {
 .select .select__cakes .select__cake img {
 	width: 100%;
 }
+.about{
+	background: url(../img/about-bg.jpg);
+	background-position: center;
+	min-height: 20vw
+}
+section.about .about__wrap{
+	width: 100%;
+}
+section.about .about__wrap .about__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 50%;
+}
 .reviews .content .review img {
 		display: none;
 	}
+	.reviews .content .review .reviews_images {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 	.reviews .content .review .review__text {
 		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		align-items: center;
+		text-align: center;
 		margin: 1rem;
 	}
 	.reviews .content .review .review__text blockquote {
 		padding: 0.5rem;
 		margin: 0.5rem;
 	}
+
+section.feedback .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+section.feedback .content form input[type="submit"] {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	background: #39312d;
+	border: 3px solid #39312d;
+	color: #fcfbfa;
+}
+section.feedback .content form .form__download {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	section.feedback .content form .form__download label {
+		text-decoration: underline;
+	}
+	section.feedback .content form .form__download input {
+		display: none;
+	}
+section.feedback .content form .form__contact {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	section.feedback .content form .form__contact input {
+		width: 100%;
+		margin-bottom: 0.5rem;
+		color: white;
+		padding: 1rem;
+		border: 1px solid white;
+		background: transparent;
+	}
+section.feedback .content form .form__submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+section.feedback .content form .form__submit input[type="checkbox"] {
+	appearance: none;
+	border: 3px solid white;
+	position: relative;
+	min-height: 2rem;
+	width: 2rem;
+	margin-right: 1rem;
+	margin-bottom: 0;
+}
+/* добавляем новый значок для выбранного checkbox-а */
+section.feedback .content form .form__submit input[type="checkbox"]::before {
+	visibility: hidden;
+	position: absolute;
+	content: "\2714";
+	color: #fcfbfa;
+	font-size: 2.2em;
+	left: 0;
+	top: -5px;
+}
+/* показываем значок если checkbox выбран */
+section.feedback .content form .form__submit input[type="checkbox"]:checked::before {
+	visibility: visible;
+}
 .map iframe {
 	width: 100%;
 	height: 400px;
 }
+
+
 /* For pages cakes */
 .cakes .cake {
 		width: 90%;
@@ -147,6 +280,8 @@ select .select__cakes .select__cake {
 .cakes .cake .cake__buy ul { 
 	padding-left: 0;
 }
+
+
 /* For page fillings */
 header nav ul {
 	font-size: 2rem;
@@ -192,50 +327,21 @@ section.feedback{
 	border-bottom: 3px;
 	border-bottom-color: #39312d;
 }
-/* Форма */
-.feedback form .form__submit {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-}
-.feedback form .form__submit input[type="checkbox"] {
-	appearance: none;
-	position: relative;
-	min-height: 2rem;
-	width: 2rem;
-	margin-right: 1rem;
-	margin-bottom: 0;
-}
-/* добавляем новый значок для выбранного checkbox-а */
-.feedback form .form__submit input[type="checkbox"]::before {
-	visibility: hidden;
-	position: absolute;
-	content: "\2714";
-	color: #fcfbfa;
-	font-size: 2.2em;
-	left: 0;
-	top: -5px;
-}
-/* показываем значок если checkbox выбран */
-.feedback form .form__submit input[type="checkbox"]:checked::before {
-	visibility: visible;
-}
+
 
 /* Adaptive design */
 @media (min-width: 768px) {
 	header a { font-size: 1.2rem; }
-	header img.logo { width: 15vw; }
+	header a.logo img { width: 15vw; }
 }
 @media (min-width: 1024px) {
 	header a { font-size: 1.5rem; }
-	header img.logo { width: 12vw;
+	header a.logo img { width: 12vw;
 }
 }
 @media (min-width: 1440px) {
 	header a { font-size: 2rem; }
-	header .logo { width: 10vw; }
+	header a.logo { width: 10vw; }
 }
 @media (min-width: 590px) {
 	section.banner.first { min-height: 30vw; }
